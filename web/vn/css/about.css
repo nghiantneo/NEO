@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+table.label_table_header thead tr {
+    width: 100%;
+    background: #9b2191;
+    border-radius: 5px !important;
+}
+table.label_table_header thead tr th{
+    border-left: 1px solid #fd5058;
+    line-height: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.row_table tr td:nth-child(1) {
+    text-align: center;
+}

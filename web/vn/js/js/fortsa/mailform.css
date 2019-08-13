@@ -1,0 +1,514 @@
+#mailform {
+	position: relative;
+	width: 100%;
+
+	/* line-height: 1; */
+	background-color: #FFF;
+	font-family:'TheSansPlain', Arial,Helvetica,sans-serif;
+	overflow: hidden;
+}
+
+#mailform-background {
+	position: relative;
+	padding: 3% 0;
+	width: 100%;
+	height: 100%;
+	background-color: #36B0E4;
+	overflow: hidden;
+}
+
+.mailform-container {
+	position: relative;
+	max-width: 1024px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#contact-form {
+	position: relative;
+	float: left;
+	width: 59.22%;
+	padding: 2.82%;
+	padding-top: 3.82%;
+	padding-left: 5.82%;
+	overflow: hidden;
+}
+
+.label {
+	float: left;
+	display: block;
+	width: 100px;
+	padding: 9px 0 9px 0;
+	height: 16px;
+	line-height: 21px;
+}
+
+#contact-form label {
+	font-family:'TheSansBoldPlain', Arial,Helvetica,sans-serif;
+	font-size: 18px;
+	color: #FFF;
+}
+
+.field {
+	display: block;
+	padding: 10px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+#contact-form input:not([type=button]),  
+#contact-form select, 
+#contact-form textarea {
+	color: #0645AD;
+	font-weight: normal;
+	display: block;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #68C4EB;
+    margin: -10px;
+    width: 100%;
+	padding: 9px;
+
+}
+
+
+#Naam, #E-mail, #Adres, #Plaats, #Telefoon {
+	color: #0645AD;
+	display:block;  
+	margin: -10px;
+    width: 100%;
+	padding: 9px;
+	border: 1px solid #9CF;
+    /* border: 1px solid #F00; */
+    background-color: #68C4EB;
+	font-size:100%;
+}
+
+#Vraag_of_opmerking {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+	color:#0645AD;
+	height: 135px;
+	border: 1px solid #9CF;
+    /* border: 1px solid #F00; */
+    background-color: #68C4EB;
+    margin: -10px;
+    width: 100%;
+	padding: 9px;
+    resize: none; 
+	word-wrap: break-word;
+    overflow-y: auto;
+}
+
+#Naam:focus, #E-mail:focus, #Vraag_of_opmerking:focus {
+	border: 1px solid #AFCDD8;  
+    background-color: #FFF;
+}
+
+#contact-form input:not([type=button]):focus,  
+#contact-form select:focus,  
+#contact-form textarea:focus {
+    border: 1px solid #AFCDD8;  
+    background-color: #FFF;  
+}
+
+#mailformAside {
+	position: relative;
+	float: right;
+	display: inline-block;
+	/* background-color: #777; */
+	width: 23.5%;
+	padding: 2.82%;
+	padding-top: 3.82%;
+	margin-right: 3%;
+}
+
+#mailformAside-extra { /* will overlap!  */
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 23.5%;
+	padding: 2.82%;
+	margin-right: 3%;
+	margin-bottom: 0%;
+}
+
+
+#mailform-loading {
+	background-image: url('../js/fancybox/source/fancybox_sprite.png');
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -22px;
+	margin-left: -22px;
+	background-position: 0 -108px;
+	opacity: 0.8;
+	cursor: pointer;
+	z-index: 750;
+}
+
+#mailform-loading div {
+	width: 44px;
+	height: 44px;
+	background: url('../js/fancybox/source/fancybox_loading.gif') center center no-repeat;
+}
+
+#info {
+	display: block;
+	clear: left; 
+	float:left;
+	/* width: 100%; */
+	color: #FFF; 
+	font-size: 13px;
+	margin: 20px 0 25px 100px;
+}
+
+#info a {
+	display: inline-block;
+	color: #FFF;
+}
+
+#info a:hover {
+	text-decoration: underline;
+}
+
+
+
+#mailformAside h3 {
+	color: #FFF;
+	margin-left: 0;
+}
+
+#mailformAside p {
+	color: #FFF;
+	font-size: 15px; 
+	font-weight: normal;
+	margin-left: 0;
+}
+
+#mailformAside ul {
+	float: left;
+	margin-left: 0;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	color: #FFF;
+	font-size: 14px;
+}
+
+#mailformAside a {
+	color: #FFF;
+}
+
+#mailformAside h4 {
+	display: block;
+	clear: left; 
+	float:left;
+	padding-top: 10px;
+	color: #FFF;
+}
+
+#well {
+	
+	background: url('imgs/mailform-track-hr.png') no-repeat;
+	background: url('imgs/mailform-track.png') no-repeat\9;/*  ie8 and below */
+	background-size: 193px 37px;
+	
+	
+	padding: 2px 2px 1px 2px;
+	margin: 15px 0px 15px 100px;
+	/*
+-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+*/
+	
+	float: left;
+	width: 189px;
+	/* background: #3B3B3B; */
+	overflow: hidden; 
+	
+	-webkit-user-select: none;
+}
+
+#track {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 21px;
+	font-weight: 400;
+	color: #FFF;
+	padding: 0;
+	width: 200px;
+  
+	-webkit-text-size-adjust: none;
+}
+#track span {
+	padding-left: 10px;
+}
+
+strong#slider {
+	background: url('imgs/arrow-hr.png') no-repeat;
+	background: url('imgs/arrow.png') no-repeat\9;/*  ie8 and below */
+	background-size: 50px 34px;
+	
+	width: 50px;
+	height: 34px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+}
+
+/* ================================================================================================ */
+
+/*
+#contact-form {
+	margin: 0px;
+	padding: 35px;
+	background-color: #6699CC;
+
+}
+
+#contact-form input:not([type=button]),  
+#contact-form select,  
+#contact-form textarea,  
+#contact-form label {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    color:#FFF;
+    margin-bottom:2px;
+    
+    
+}
+
+#contact-form input:not([type=button]),  
+#contact-form select, 
+#contact-form textarea {
+	color: #0645AD;
+	font-weight: normal;
+	display:block;
+	width: 275px;
+    border: 1px solid #9CF;
+    background-color: #68C4EB;
+    
+
+	padding: 3px 5px 5px 8px;
+
+}
+
+#contact-form textarea {
+    height: 135px;
+    margin-top: 5px;
+    margin-bottom: 35px;  
+    resize: none;  
+} 
+*/
+
+/* Fallback for NON html5 browsers */
+/*
+#Naam, #E-mail {
+	color: #0645AD;
+	display:block;  
+	width: 275px;
+    border: 1px solid #9CF;
+    background-color: #68C4EB;
+    margin-bottom: 15px!important;   
+    padding: 5px 5px 5px 8px;
+
+	font-size:100%;
+}
+
+#Naam:focus, #E-mail:focus {
+	border: 1px solid #AFCDD8;  
+    background-color: #FFF;
+}
+
+
+.label {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    color:#FFF;
+	
+	width: 130px;
+	margin-top: 5px;	
+}
+
+#Vraag_of_opmerking {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+	color:#0645AD;
+	width: 275px;
+	height: 135px;
+	border: 1px solid #9CF;
+    background-color: #68C4EB;
+    margin-top: 5px;
+    padding: 3px 5px 5px 8px;
+    resize: none; 
+	word-wrap: break-word;
+    overflow: hidden;
+}
+
+#Vraag_of_opmerking:focus {
+	border: 1px solid #AFCDD8;  
+    background-color: #FFF; 
+}
+*/
+
+
+/* end NON html5 browsers*/
+
+/*
+#contact-form label {
+	display: block;
+	float: left;
+	width: 130px;
+	margin-top: 5px;
+}
+
+#contact-form input:not([type=button]):focus,  
+#contact-form select:focus,  
+#contact-form textarea:focus {
+    border: 1px solid #AFCDD8;  
+    background-color: #FFF;  
+}
+
+#contact-form .required {
+	margin-left: 5px;
+    font-weight:bold;  
+    color:#F00;  
+}
+
+#req-field-desc {  
+    font-style:italic;  
+} 
+*/ 
+
+.required {
+	margin-left: 5px;
+	/* font-weight: bold; */
+}
+
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */  
+input:required, textarea:required {  
+    -moz-box-shadow:none;  
+    -webkit-box-shadow:none;  
+    -o-box-shadow:none;  
+    box-shadow:none;  
+}
+
+/* Normalize placeholder styles */  
+  
+/* chrome, safari */  
+::-webkit-input-placeholder {  
+    color:#CCC;  
+    font-style:italic;  
+}  
+  
+/* mozilla */  
+input:-moz-placeholder, textarea:-moz-placeholder {  
+    color:#CCC;  
+    font-style:italic;  
+}  
+  
+/* ie (faux placeholder) */  
+input.placeholder-text, textarea.placeholder-text  {  
+    color:#CCC;  
+    font-style:italic;  
+}  
+
+/* ================================================================================================ */
+
+#submitButton {
+	/* padding: 14px 20px 20px 20px; */
+	
+	float: right;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #EBEBEB;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	width: 193px;
+	height: 37px;
+	border: none;
+	/* background: #336699 url(imgs/submit.png) 2px -32px no-repeat; */
+	background: url('imgs/submit-hr.png') 0 -37px no-repeat;
+	background: url('imgs/submit.png') 0 -37px no-repeat\9;/*  ie8 and below */
+	background-size: 193px 111px;
+	
+	overflow: hidden; 
+	
+	-webkit-user-select: none;
+
+}
+
+#submitButton:disabled {
+	color: #CCC;
+	background-position: 0 0;
+}
+
+.ltIE9 #submitButton[disabled] {
+	color: #CCC;
+	background-position: 0 0;
+}
+
+#submitButton:not([disabled]):active {
+	color: #CCC;
+	background-position: 0 -74px;
+}
+
+/* ================================================================================================ */
+
+@media screen and (max-width: 840px) {
+
+	#contact-form, #mailformAside {
+		display: block;
+		float: left;
+		/* clear: left; */
+		width: 88.36%;
+		padding: 5.82%;
+	}
+	#contact-form {
+		padding-top: 0;
+	}
+	
+	#mailformAside-extra {
+		display: none;
+	}
+	
+	#mailformAside h3, #mailformAside h4, #mailformAside p {
+		margin-left: 100px;
+	}
+	
+	#mailformAside ul {
+		margin-left: 100px;
+	}
+}
+
+/* ================================================================================================ */
+
+@media screen and (max-width: 600px) {
+	.field {
+		clear: left;
+	}
+	#well, #info {
+		margin-left: 0;
+	}
+	#mailformAside h3, #mailformAside h4, #mailformAside p {
+		margin-left: 0;
+	}
+	
+	#mailformAside ul {
+		margin-left: 0;
+	}
+}
+
+/* ================================================================================================ */
+
+@media screen and (max-width: 460px) {
+	#submitButton {
+		
+		float: left;
+		clear: left;
+	}
+}

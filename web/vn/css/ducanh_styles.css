@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.margin15{
+	margin:15px 0 !important;
+}
+.funringMe p{
+	margin:15px;
+}
+.funringMe .btnBox{
+	margin:20px 0;
+}
+.p-tlut .label--checkbox{
+	margin-right:15px;
+}
+.p-tlut{
+	text-align:center;
+}
